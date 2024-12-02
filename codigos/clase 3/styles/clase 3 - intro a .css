@@ -1,0 +1,44 @@
+/*esto es un comentario*/
+*{
+color: brown;
+}
+
+:root {
+    --color-principal: grey;
+}
+
+p {
+    color: black;
+    background-color: blue;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: var(--color-principal);
+}
+
+.parrafo-seleccionado{
+    color: green;
+    background-color: aquamarine;
+}
+
+.titulo-seleccionado{
+    color: grey;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+}
+
+body{
+    background-color: wheat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.parrafo-con-paddding{
+    padding: 100px;
+    color: var(--color-principal);
+}
+
+#parrafo-jupiter{
+    color: cadetblue;
+}
