@@ -9,16 +9,24 @@
 }
 
 body {
-  background-image: url(Proyectos\ del\ curso\tp1\assets\ligth.png);
-  background-repeat: no-repeat;
+  background-image: url(/Proyectos\ del\ curso/tp1/assets/ligth.png);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-a {
-  color: #949494;
+.cont-menu li a {
+  font-weight: 450;
+  font-style: normal;
+  color: rgb(148, 148, 148);
+  font-kerning: none;
+  text-decoration: none;
+  font-size: 45px;
+
 }
 
-a:hover {
+.cont-menu li a:hover {
   color: white;
 }
 
@@ -27,25 +35,21 @@ a:hover {
   justify-content: center;
   display: flex;
   text-align: center;
-  gap: 19px;
+  gap: 50px;
   list-style: none;
-  padding-top: 20px;
+  padding-top: 100px;
   font-size: 30px;
 }
 
 .cont-sobre-mi {
   color: #000000;
-  text-align: center;
-  justify-content: center;
-  padding-top: 500px;
+  padding-top: 300px;
 }
 
 .cont-sobre-mi h1 {
-  font-size: 150px;
+  font-size: 250px;
 }
 
 .cont-sobre-mi p {
-  font-size: 40px;
-  padding-left: 500px;
-  padding-right: 500px;
+  font-size: 57px;
 }
