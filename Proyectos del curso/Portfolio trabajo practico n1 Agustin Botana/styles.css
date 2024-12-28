@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Flex", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-kerning: none;
+  text-decoration: none;
+}
+
+body {
+  background-image: url(/Proyectos\ del\ curso/new\ one/assets/ligth.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  color: #949494;
+}
+
+a:hover {
+  color: white;
+}
+
+.cont-menu {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  gap: 19px;
+  list-style: none;
+  padding-top: 20px;
+  font-size: 30px;
+}
+
+.cont-sobre-mi {
+  color: #000000;
+  text-align: center;
+  justify-content: center;
+  padding-top: 500px;
+}
+
+.cont-sobre-mi h1 {
+  font-size: 150px;
+}
+
+.cont-sobre-mi p {
+  font-size: 40px;
+  padding-left: 500px;
+  padding-right: 500px;
+}
