@@ -30,6 +30,7 @@
     </nav>
   </header>
   <main>
+    <!--main page-->
     <div class="container-fluid vh-100 d-flex flex-column justify-content-start align-items-center text-center">
       <div class="cont-sobre-mi">
         <h1>Agustín Botana</h1>
@@ -43,13 +44,72 @@
         </p>
       </div>
     </div>
+    <!--proyectos-->
+    <section class="cont-proyectos">
+      <h2>Proyectos</h2>
+      <div class="proyectos">
+        <div class="box-proyectos">
+          <h1>Mercado Libre</h1>
+          <p>Pagina web</p>
+          <button><a href="#">Visite aqui</a></button>
+        </div>
+        <div class="box-proyectos">
+          <h1>Mercado pago</h1>
+          <p>Pagina web</p>
+          <button><a href="#">Visite aqui</a></button>
+        </div>
+        <div class="box-proyectos">
+          <h1>Tesla Motors</h1>
+          <p>Pagina web</p>
+          <button><a href="#">Visite aqui</a></button>
+        </div>
+      </div>
+    </section>
+    <!--formacion-->
+    <section class="cont-formacion">
+      <h2>Formacion</h2>
+      <div class="formacion">
+        <div class="box-formacion">
+          <h1>UTN</h1>
+          <p>Curso de HTML, CSS, Bootstrap, JS y React</p>
+          <button><a href="#">Visite aqui</a></button>
+        </div>
+        <div class="box-formacion">
+          <h1>CoderHouse</h1>
+          <p>Curso de Backend</p>
+          <button><a href="#">Visite aqui</a></button>
+        </div>
+        <div class="box-formacion">
+          <h1>IG</h1>
+          <p>Titulo preuniversitario de frontend y backend</p>
+          <button><a href="#">Visite aqui</a></button>
+        </div>
+      </div>
+    </section>
+    <!--contacto-->
+    <div>
+      <h2>Contacto</h2>
+      <form>
+        <label for="nombreApellido">Nombre completo</label>
+        <input type="text" id="nombreApellido" placeholder="Juan Pérez" required>
 
+        <label for="email">Correo Electrónico</label>
+        <input type="email" id="email" placeholder="ejemplo@correo.com" required>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
   </main>
-
   <!--bootstrap js-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+  <footer>
+    <h3>© 2024 Portafolio de Agustin Botana</h3>
+  </footer>
 </body>
 
 </html>
