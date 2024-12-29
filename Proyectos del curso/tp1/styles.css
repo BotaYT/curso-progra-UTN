@@ -87,7 +87,7 @@ body {
 }
 
 .sobre-mi button {
-  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  background: linear-gradient(to bottom right, #42323271, #00000071);
   border: 0;
   border-radius: 12px;
   color: #FFFFFF;
@@ -150,11 +150,20 @@ body {
 
 /* contenedor de proyecto*/
 
+.icon {
+  font-size: 30px;
+  font-weight: normal;
+  opacity: 0.9;
+}
+
+
 .titulos {
+  color: white;
   text-align: center;
   justify-content: center;
-  font-size: 200px;
+  font-size: 50px;
   padding-bottom: 150px;
+  opacity: 0.9;
 }
 
 .proyectos {
@@ -177,6 +186,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   opacity: 0.5;
 }
@@ -197,7 +207,7 @@ body {
 }
 
 .box-proyectos:nth-child(3) {
-  background: linear-gradient(45deg, #ce4343, #ff5100);
+  background: linear-gradient(45deg, #ff0000, #960803);
 }
 
 .box-proyectos h1 {
@@ -205,7 +215,8 @@ body {
 }
 
 .box-proyectos p {
-  font-size: 40px;
+  font-size: 30px;
+  max-width: 400px;
 }
 
 .box-proyectos a {
@@ -213,19 +224,103 @@ body {
   color: black;
 }
 
+.proyectos-cont-botom {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 20px;
+}
+
 .box-proyectos button {
-  font-size: 40px;
-  margin-top: 10px;
-  padding: 10px 20px;
-  border: none;
-  background: #838080;
-  color: #222222;
-  border-radius: 8px;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
   cursor: pointer;
-  transition: transform 0.3s;
-  opacity: 0.5;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  will-change: transform;
+}
+
+.box-proyectos button:disabled {
+  pointer-events: none;
 }
 
 .box-proyectos button:hover {
-  opacity: 1;
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.box-proyectos button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.box-proyectos i {
+  margin-right: 8px;
+}
+
+/* Estilos para los items de lenguajes */
+
+
+.box-languages {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
+.language {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.language i {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+/* Color y fondo según el lenguaje */
+
+.language.html {
+  background-color: #E44D26;
+  color: white;
+}
+
+.language.css {
+  background-color: #1572B6;
+  color: white;
+}
+
+.language.js {
+  background-color: #F7DF1E;
+  color: black;
+}
+
+.language.mysql {
+  background-color: #00758F;
+  color: white;
+}
+
+.language:hover {
+  opacity: 0.8;
 }
