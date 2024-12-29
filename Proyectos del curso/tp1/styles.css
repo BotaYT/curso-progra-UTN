@@ -6,6 +6,7 @@
   font-style: normal;
   font-kerning: none;
   text-decoration: none;
+  color: white;
 }
 
 /*imagen de fondo*/
@@ -156,13 +157,12 @@ body {
   opacity: 0.9;
 }
 
-
-.titulos {
+.titulo-proyecto {
   color: white;
   text-align: center;
   justify-content: center;
   font-size: 50px;
-  padding-bottom: 150px;
+  padding-bottom: 100px;
   opacity: 0.9;
 }
 
@@ -221,7 +221,7 @@ body {
 
 .box-proyectos a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .proyectos-cont-botom {
@@ -323,4 +323,48 @@ body {
 
 .language:hover {
   opacity: 0.8;
+}
+
+/* contenedor formacion */
+
+.titulo-formacion {
+  color: white;
+  text-align: center;
+  justify-content: center;
+  font-size: 50px;
+  padding-bottom: 50px;
+  opacity: 0.9;
+}
+
+.cont-formacion {
+  margin-top: 150px;
+}
+
+.formacion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+  padding: 60px 20px;
+  border-radius: 10px;
+}
+
+.box-formacion {
+  text-align: center;
+  flex: 1 1 calc(33.33% - 40px);
+  max-width: 450px;
+  min-width: 300px;
+  height: 250px;
+  padding: 40px;
+  background-color: rgba(32, 3, 41, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.box-formacion:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
 }
